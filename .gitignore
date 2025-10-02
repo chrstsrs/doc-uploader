@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# SQLite DBs
+*.db
+
+# Docker data
+/data/
+*/data/
+
+# Env files
+.env
+
+# Virtualenvs
+venv/
+svenv/
