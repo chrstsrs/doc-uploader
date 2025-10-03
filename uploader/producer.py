@@ -1,7 +1,7 @@
 from confluent_kafka import Producer
 import json, os
 
-conf = {"bootstrap.servers": os.getenv("KAFKA_BOOTSTRAP", "kafka:9092")}
+conf = {"bootstrap.servers": os.getenv("KAFKA_BOOTSTRAP", "kafka:29092")}
 producer = Producer(conf)
 
 def publish_event(topic, event):

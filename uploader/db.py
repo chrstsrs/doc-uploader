@@ -1,6 +1,7 @@
 import sqlite3
+import os
 
-DB_PATH = "uploader.db"
+DB_PATH = os.getenv("UPLOADER_DB_PATH", "data/uploader.db")
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)

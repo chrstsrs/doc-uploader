@@ -1,6 +1,7 @@
 import sqlite3
+import os
 
-DB_PATH = "processor.db"
+DB_PATH = os.getenv("PROCESSOR_DB_PATH", "data/processor.db")
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)

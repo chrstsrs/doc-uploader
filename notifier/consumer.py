@@ -2,7 +2,7 @@ from confluent_kafka import Consumer
 import json, os, asyncio
 
 conf = {
-    "bootstrap.servers": os.getenv("KAFKA_BOOTSTRAP", "kafka:9092"),
+    "bootstrap.servers": os.getenv("KAFKA_BOOTSTRAP", "kafka:29092"),
     "group.id": "notifier-group",
     "auto.offset.reset": "earliest"
 }

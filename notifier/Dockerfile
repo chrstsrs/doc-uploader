@@ -9,4 +9,4 @@ COPY . .
 
 ENV DB_PATH=/data/notifier.db
 
-CMD ["python", "app.py"]
+CMD ["python", "-u", "app.py"]

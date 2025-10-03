@@ -1,6 +1,7 @@
 import sqlite3
+import os
 
-DB_PATH = "notifier.db"
+DB_PATH = os.getenv("NOTIFIER_DB_PATH", "data/notifier.db")
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)

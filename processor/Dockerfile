@@ -9,4 +9,4 @@ COPY . .
 
 ENV DB_PATH=/data/processor.db
 
-CMD ["python", "app.py"]
+CMD ["python", "-u", "app.py"]
